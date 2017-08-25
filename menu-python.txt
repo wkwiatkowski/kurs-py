@@ -1,0 +1,31 @@
+odp=True
+while odp:
+     print("\n"
+"     1.Nauka SA, ktore wiadomosci sa porzadane\n"
+"     2.Nauka SA, ktore wiadomosci sa spamem\n"
+"     3.Przerywam prace (Exit/Quit)\n"
+                           )
+
+     TO SAMO MOZE BYC ZAPISANE:
+     
+     print("""
+     1.Nauka SA, ktore wiadomosci sa porzadane
+     2.Nauka SA, ktore wiadomosci sa spamem
+     3.Przerywam prace (Exit/Quit)
+                        """)
+
+     
+     odp=raw_input("Wybierz jedna z opcji:")
+     if odp=="1":
+        print("\n Nauka SA, ktore wiadomosci sa OK")
+        PROG --ham -f /home/waldek/SA/ham_source.txt
+        raise SystemExit
+     elif odp=="2":
+        print("\n Nauka SA, ktore wiadomosci sa SPAMEM")
+        PROG --spam -f /home/waldek/SA/spam_source.txt
+        raise SystemExit
+     elif odp=="3":
+        print("\n Koncze prace") 
+        odp = None
+     else:
+       print("\n Nie wybrales zadnej poprawnej opcji, sprobuj ponownie")   

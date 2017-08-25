@@ -1,0 +1,32 @@
+quit(), exit(), sys.exit(), os._exit(), raise SystemExit
+
+
+1. quit raises the SystemExit exception behind the scenes.
+Furthermore, if you print it, it will give a message:
+>>> print (quit)
+Use quit() or Ctrl-Z plus Return to exit
+>>>
+This functionality was included to help people who do not know Python. After all, one of the most likely things a newbie will try to exit Python is typing in quit.
+Nevertheless, quit should not be used in production code. This is because it only works if the site module is loaded. Instead, this function should only be used in the interpreter.
+
+2. exit is an alias for quit (or vice-versa). They exist together simply to make Python more user-friendly.
+Furthermore, it too gives a message when printed:
+>>> print (exit)
+Use exit() or Ctrl-Z plus Return to exit
+>>>
+However, like quit, exit is considered bad to use in production code and should be reserved for use in the interpreter. This is because it too relies on the site module.
+
+
+3. sys.exit raises the SystemExit exception in the background. This means that it is the same as quit and exit in that respect.
+Unlike those two however, sys.exit is considered good to use in production code. This is because the sys module will always be there.
+To use it previously you need to import the module sys
+
+
+4. os._exit exits the program without calling cleanup handlers, flushing stdio buffers, etc. Thus, it is not a standard way to exit and should only be used in special cases. The most common of these is in the child process(es) created by os.fork.
+
+
+Note that, of the four methods given, only this one is unique in what it does.
+Summed up, all four methods exit the program. However, the first two are considered bad to use in production code and the last is a non-standard, dirty way that is only used in special scenarios. So, if you want to exit a program normally, go with the third method: sys.exit.
+
+
+5. raise SystemExit - no need to import  modules. 

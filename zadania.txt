@@ -1,0 +1,49 @@
+1. skrypt wyswietlajacy co okreslona ilosc czasu zawartosc danego katalogu lub dany plik
+2. wyswietlanie inf. dot. ilosci wywolan hostowanej strony
+	- zestawienie zbiorcze (pobranie inf. o hostowanych stronach)
+	- pobranie strony z argumentu
+
+	informacje:
+	- ilosc wywolan
+		- z wyszczegolowieniem, ile wywolan pliku robots
+		- jakie przegladarki z suma wywolan
+		- 5 najczesciej odwiedzajacych adresow ip + nazwa domenowa + geoip
+3. ilosc aktualnych polaczen na podanym porcie/usludze:
+	- www/https
+	- smtp
+	- imap/pop
+	- ssh
+	- ntp
+4. zablokowanie polaczen z danego hosta:
+	- tylko na okreslony port
+	- tylko na okreslony czas
+	- do odwolania
+5. lista aktualnie zablokowanych hostow
+6. lista blednych prob logowania na ssh:
+	- suma polaczen z rozbiciem na:
+		- udane polaczenia: data, godz, adres ip i login
+		- nieudane -//-: data, godz, adres ip i login
+7. lista logowan do dovecota:
+	- suma logowan
+		- udane polaczenia: data, godz, adres ip i login
+		- nieudane -//-: data, godz, adres ip i login
+8. lista logowan na roundcube:
+	- suma logowan
+		- udane polaczenia: data, godz, adres ip i login
+		- nieudane -//-: data, godz, adres ip i login
+9. proby logowania na strony administracyjne np. munin
+	- suma logowan
+		- udane polaczenia: data, godz, adres ip i login
+		- nieudane -//-: data, godz., adres ip i login
+10. zbiorcze ustawienie dla pkt. 6-9:
+	- ilosc prob logowan
+		- udane 
+		- nieudane
+11. wyswietla inf. czy usulugi dzialaja
+	- lista wyboru
+		- wszystkie
+		- wybrane
+
+	- wynik
+		usluga dziala, nr procesu, cpu, ram
+
