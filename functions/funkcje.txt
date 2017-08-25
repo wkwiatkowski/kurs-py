@@ -1,0 +1,34 @@
+- zamiana znaku
+
+napis='Wiek: '+str(18)
+print(napis.replace('W','w'))
+print(napis.lower())
+print(napis.upper())
+
+- formatowanie lancuchow znakowych
+	stara wersja (python 2.x)
+	%f - oznacza, ze w tym miejscu zostanie wstawiona jakas zmienan, ktora bedzie przeksztalcona na lancuch
+	literka 'f' - oznacza dane typu float
+	literka 's' - -//- string
+	napis='Ta liczba %f to %s' %(3.23, liczba)
+
+	nowy typ formatowania (Python 3.x)
+	'{0}, {1}, {2}'.format('a','b','c')
+
+- ilosc znakow
+	len()
+	np.	a=len('slowo')
+		print(a)
+
+- listowanie zawartosci list, krotek czy slownikow
+	list()
+	np. 	a=[1,2,3]
+		list(a)
+
+- listowanie kluczy slownika
+	list(nazwa_slownika.keys())
+	np. 	d={'a':'b',1:2}
+		list(d.keys())
+
+- czyszczeni slwonika
+	nazwa_slownika.clear()

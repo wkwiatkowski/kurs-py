@@ -1,0 +1,35 @@
+if jakis_warunek		# dowolna konstrukcja, ktorej wynik mozna przelozyc na logiczne True lub False
+	jakas_instrukcja 	# musi zaczynac sie od wciecia, zostanie wykonana jezeli warunek bedzie prawdziwy. Wynik warunku musi przekladac sie na wartosc boolean: true or false
+
+	np. 
+	if 1<2:
+		print('prawda')
+	
+	if True:
+		print('prawda')
+
+	if 'napis':
+		print('prawda') 	# warunek zostanie spelniowny pomimo tego, ze ciag znakow 'napis' nie zostal nigdzie zadeklarowany. Dzieje sie tak, poniewaz nie jest to ciag pusty, zawierajacy jakas wartosc. Stad wynik warunku 'true'
+
+	if 1:
+		print('prawda')		# to samo. Na logiczna prawde True przekladane sa wszystkie liczby w tym ujemne (np. -15) z wyjatkiem 0
+
+	if 0:
+		print('prawda') 	# !!! Warunek nie zostanie spelniony poniewaz 0 w Pythonie przekladany jest na logiczne False
+
+	if Non:
+		print('prawda')		# !!! to samo. None przekladane jest na logiczne False
+
+
+-----------------------------------------------------------
+Warunku mozna zagniezdzac
+
+a=5
+b=20
+c=4
+
+if a<b:
+	print('5 mniejsze od 20')
+	if a!=c:
+		print('ale wieksze od 4')
+

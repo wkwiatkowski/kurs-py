@@ -1,0 +1,48 @@
+- Listy i krotki to sekwencje różnego rodzaju typy danych
+
+- Listy ujmuje sie w nawiasy []. Zawartość list można modyfikować: dodawaćelementy, odejmować, podmieniać.
+l=['a',1,2,'element,3.14]
+print(l)
+
+- Krotki ujmuje sie w nawiasy (). Raz zdeklarowanej krotki nie można zmienić jak ma to miejsce w przypadku listy.
+k=('a',1,2,'element,3.14)
+print(k)
+
+- Wyswietlenie elementu wg indeksu:
+print(l[2])
+print(k[1])
+
+- Wyświetlenie wycinka
+print(l[1:3])	# wyswietlanie zakonczy sie na elemencie o 1 mniejszym niż liczba zamykająca przedział
+print(k[:-2])	# wyswietlanie od 0 i 
+
+- Sprawdzenie, czy jakis element wystepuje na liscie
+print(2 in l) # czy 2 wystepuje na liscie
+
+- Podmiana elementu na liscie
+l[0]=3	# podmiana elementu z indeksem 0
+print(l)
+
+-----------------------------------
+SŁOWNIKI
+
+To strukturay danych podobne list z tym, ze dostep do danych odbywa sie nie za pomoca indeksow ale kluczy, ktore moga byc roznego typu.
+	slownik={'a':'b','klucz':15,3:[1,3,4]}
+	print(slownik)
+
+wyswietlenie wartosci konkretnego klucza
+	print(slownik['a'])
+
+liczba elementow w slowniku
+	print(len(slownik))
+
+dodanie nowego elementu do slownika
+	slownik['nazwa_klucza']=wartosc
+	slownik['h']=34
+
+usuniecie klucza ze slownika
+	del slownik[nazwa_klucza]
+
+usuniecie zawartosci slownika
+	slownik.clear()
+
