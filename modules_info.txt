@@ -1,0 +1,34 @@
+# A list and short description with examples of specific modules of python
+
+1. os
+Create a directory named path with numeric mode mode. On some systems, mode is ignored. Where it is used, the current umask value is first masked out.
+
+os.mkdir('/tmp/testfolder')
+os.mkdir('/tmp/testfolder, mode=0740')
+os.listdir('/tmp')
+
+os.makedirs('/tmp/test1/test2/test3, mode=0700')
+os.chmod('/tmp/waldek', 0700)
+os.chmod('/tmp/waldek', stat.S_IRGRP) # But first, the "stat" module must be imported. There is more options to change permissions not using numeric mode. 
+
+os.symlink('/tmp/waldek', '/home/user/tmp_waldek')
+os.rename('/tmp/waldek', '/tmp/waldek2')
+os.lchown('/tmp/waldek', 1001, 500)
+os.stat('/tmp/waldek')
+
+os.walk
+
+2. stat
+
+3. subprocess
+
+subprocess.call(['ls', '/home/user'])
+subprocess.call(['ls', '-al', '/home/user'])
+subprocess.call(['chmod', '-R', '0750', '/tmp/file1'])
+subprocess.call(['ps', '-aux'])
+
+
+4. tempfile
+tempfile.mkstemp() # will create a temp file in /tmp/directory with 
+
+5. os.path
