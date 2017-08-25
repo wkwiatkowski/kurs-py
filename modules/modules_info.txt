@@ -1,5 +1,9 @@
 # A list and short description with examples of specific modules of python
 
+- to see data structure of imported module: dir(module_name)
+- https://pypi.python.org/pypi
+- to install py package: pip install package_name
+
 1. os
 Create a directory named path with numeric mode mode. On some systems, mode is ignored. Where it is used, the current umask value is first masked out.
 
@@ -32,3 +36,8 @@ subprocess.call(['ps', '-aux'])
 tempfile.mkstemp() # will create a temp file in /tmp/directory with 
 
 5. os.path
+
+6. platform
+
+7. random
+

@@ -1,3 +1,5 @@
+using if statement you have to use indentation using tabs or white spaces (x4) otherwise python will returns error code
+
 if jakis_warunek		# dowolna konstrukcja, ktorej wynik mozna przelozyc na logiczne True lub False
 	jakas_instrukcja 	# musi zaczynac sie od wciecia, zostanie wykonana jezeli warunek bedzie prawdziwy. Wynik warunku musi przekladac sie na wartosc boolean: true or false
 

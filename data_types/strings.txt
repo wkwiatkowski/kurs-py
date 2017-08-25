@@ -1,0 +1,12 @@
+multiple line string - use """ """
+ to print string variable => print "Text %s" % (variable_name)
+  to show len of string: len(string_name)
+   to join strings use "+"
+    to join strings, a function "join" could be use. eg.: server_desc = " ".join(("some texgt", string_name))
+     a character which will be used to glue strings is placed in "".join eg. "-".join or " ".join
+      to check string content: checking_phrase in string_name
+       to check position of string, find method could be used: eg. serrver_desc.find("centos")
+        to display specific string content eg.: string_name[0:3] or [:3] or [4:] etc.
+	 to remove white spaces from a string use "strip()" method
+	  to remove white spaces only from left or right site eg.: "lstrip()" and "rstrip()"
+	   to remove any text from eg. left side: string_name.lstrip("t ")
