@@ -1,0 +1,8 @@
+< 	mniejszy od
+== 	rowny
+!= 	rozny
+or 	lub
+and 	i
+not 	logiczne zaprzeczenie
+
+

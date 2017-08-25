@@ -1,0 +1,2 @@
+zamiana danych typu int na string
+	np. str(19) liczba zostanie zinterpretowana jako ciąg znaków

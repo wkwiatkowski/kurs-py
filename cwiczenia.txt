@@ -1,0 +1,17 @@
+Pomysły na napisane skryptu
+
+- znalezienie określonego procesu, sprawdzenie PID, CPU, RAM, 
+- jak wyżej ale bez CPU i RAM, w razie braku wysłanie e-mail'a lub sms
+- sprawdzenie czy określona usługa nasłuchuje na określnym porcie. W przypadku błędu np. brak adresu ip lub zły adres ip 
+	lub zły nr portu - poinformuje zapisaniem do pliku, wysłaniem e-maila, sms
+- zajętość dysku
+- zajętość poszczególnych głownych katalogów: home, etc, log, www, mail
+- sprawdzenie czy zdalne komputery działają: ping
+- sprawdzenie czy usługa dns działa
+- sprawdzenie temp. apcenvironment. Alert po przekroczeniu określnej wartości
+- lista użytkowników, którzy błędnie wpisali hasło: roundcube, dovecot, 
+- ilość wysłanych listów poszczególnych użytkowników lub nazwy użytkownika podanej interaktywnie
+- błędy logowania ssh: kto i kiedy
+- kto w danym dniu montował dysk sieciowy
+- kto (adres ip) łaczył się z internetem
+
