@@ -1,8 +1,28 @@
 - Listy i krotki to sekwencje różnego rodzaju typy danych
 
-- Listy ujmuje sie w nawiasy []. Zawartość list można modyfikować: dodawaćelementy, odejmować, podmieniać.
+* Lista może zawierać liczby, ciąg znaków (str) lub jedno i drugie na raz. Może również zawierać inne listy
+list1 = [1, 2, 3]
+list2 = range(1, 19)
+list3 = [1,62,"q","I am also a member"]
+str1 = "joe"
+list4 = ["4", str1, list3]
+list4.append("george")
+list4.remove("george")
+
+* Listy ujmuje sie w nawiasy []. Zawartość list można modyfikować: dodawaćelementy, odejmować, podmieniać.
 l=['a',1,2,'element,3.14]
 print(l)
+
+list1[2]
+3
+list1[:2]
+[1, 2]
+list1.index(3)
+2
+len(list1)
+list1.insert(list1.index(2), 5)
+[1, 5, 2, 3]
+
 
 - Krotki ujmuje sie w nawiasy (). Raz zdeklarowanej krotki nie można zmienić jak ma to miejsce w przypadku listy.
 k=('a',1,2,'element,3.14)

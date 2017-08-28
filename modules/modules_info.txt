@@ -30,6 +30,8 @@ subprocess.call(['ls', '/home/user'])
 subprocess.call(['ls', '-al', '/home/user'])
 subprocess.call(['chmod', '-R', '0750', '/tmp/file1'])
 subprocess.call(['ps', '-aux'])
+subprocess.call(['df', '-k'])
+subprocess.check_output(['df', '-k'])
 
 
 4. tempfile

@@ -1,0 +1,14 @@
+isdigit() # returns beloan values
+str = "123456";  # Only digit in this string
+print str.isdigit()
+True
+
+
+range()
+list1 = range(1,19)
+print list1
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+
+
+splitline()
+
